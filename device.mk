@@ -66,6 +66,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.version.release=$(PLATFORM_VERSION) \
     ro.build.version.sdk=$(PLATFORM_SDK_VERSION)
 
+# Recovery
+PRODUCT_PACKAGES += \
+    resize2fs_static
+
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
