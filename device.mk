@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/huawei/berkeley/berkeley-vendor.mk)
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
@@ -76,10 +74,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Recovery
 PRODUCT_PACKAGES += \
     resize2fs_static
-
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
 
 # Shims
 PRODUCT_PACKAGES += \
